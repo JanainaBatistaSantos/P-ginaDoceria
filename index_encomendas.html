@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Pães Doces e Bolos</title>
+</head>
+<body>
+ <header>
+ <h1>Pães Doces e Bolos</h1>
+
+ <ul>
+ <li><a href="index.html" >Página Principal</li></a>
+ <li><a href="index_encomendas.html" target="_blank"> Encomendar Bolo</li></a>
+ </ul>
+ 
+</header>
+<main>
+    <h2>Encomendar Bolo</h2>
+</br>
+    <form method="GET">
+    Nome: <input type=text name="nome" placeholder="Informe o nome" size=35 maxlength=35 />
+    DDD (<input type="tel" name="ddd" placeholder="DDD" size=2 maxlength=2 />) 
+    Telefone:<input type="tel" name="Telefone" placeholder="Telefone" size=10 maxlength=10 />
+    
+    </br>
+    </br>
+    <table border>
+            <caption>Bolos</caption>
+         <tr>
+            <td><img src="Imagens/Bolo01.png"alt="Bolo de Chocolate" width="200"/></td>
+            <td><img src="Imagens/Bolo02.png" alt="Bolo de Frutas" width="200"/></td>
+            <td><img src="Imagens/Bolo03.png" alt="Bolo Misto" width="200"/></td>
+        </tr>
+        <tr>
+           <th>Chocolate</th>
+           <th>Frutas</th>
+           <th>Misto</th>
+        </tr>    
+     </table>
+
+    </br>
+    <form method="GET">
+    Sabor:<select name="sabor">
+        <option value="null" selected="selected">Escolha... </option>
+        <option value="choc">Chocolate</option>
+        <option value="frut">Frutas</option>
+        <option value="mis">Misto</option>
+        </select>
+        Tipo:
+          <input type="radio" name="Tipo" value="sim" />Simples
+          <input type="radio" name="Tipo" value="Dec" />Decorado<br /><br />
+        Tamanho: <input type="text" max="10" min="0" name="tamanho" size="2"/> Kg
+        <input type="checkbox" name="diet" value="diet" />Diet? </br><br />
+        Observações:<br/>
+        <textarea id="observações" type="text" name="observações" placeholder="Observações sobre o Pedido" rows="3" cols="80" ></textarea>
+        <br /><br />
+        <input type="submit" value="Enviar Pedido">
+        <input type="reset" value="Limpar">
+     
+    </form>
+</main>
+</body>
+</html>
